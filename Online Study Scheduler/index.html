@@ -72,7 +72,29 @@
             text-decoration: underline;
         }
        
-      
+      .login-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    color: #06303E !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+.login-btn:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.google_icon {
+    width: 30px;
+    height: 30px;
+}
     </style>
 
 </head>
@@ -83,6 +105,10 @@
         <a class="menu" href="./components/dashboard.html">Dashboard</a>
         <a class="menu"href="./components/calendar.html">Calendar</a>
         <a class="menu"href="./components/notes.html">Notes</a>
+        <button id="googleSignInBtn" class="login-btn">
+        <img src="./assets/googlelogo.png" alt="Google logo" class="google_icon">
+        Sign in
+    </button>
         
     </header>
     <div class="hero">
